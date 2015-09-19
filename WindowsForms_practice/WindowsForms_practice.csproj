@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DE9F5BC5-45D7-4653-A5FC-9FFA49D6AFE3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsForms_practice</RootNamespace>
+    <AssemblyName>WindowsForms_practice</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.3.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 6.3.5\Assemblies\v2.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DragDropFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DragDropFile.Designer.cs">
+      <DependentUpon>DragDropFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HK\APIs.cs" />
+    <Compile Include="HK\HKForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HK\HKForm.Designer.cs">
+      <DependentUpon>HKForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MVCPrac\ControllerA.cs" />
+    <Compile Include="MVCPrac\ControllerB.cs" />
+    <Compile Include="MVCPrac\GenericView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MVCPrac\GenericView.Designer.cs">
+      <DependentUpon>GenericView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MVCPrac\IController.cs" />
+    <Compile Include="MVCPrac\IModel.cs" />
+    <Compile Include="MVCPrac\ModelA.cs" />
+    <Compile Include="MVCPrac\ModelB.cs" />
+    <Compile Include="MVCPrac\MVC01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MVCPrac\MVC01.Designer.cs">
+      <DependentUpon>MVC01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MVCTest2\ControllerA.cs" />
+    <Compile Include="MVCTest2\ControllerB.cs" />
+    <Compile Include="MVCTest2\ExtraForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MVCTest2\ExtraForm.Designer.cs">
+      <DependentUpon>ExtraForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MVCTest2\IController.cs" />
+    <Compile Include="MVCTest2\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MVCTest2\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MVCTest3\Controller.cs" />
+    <Compile Include="MVCTest3\ExtraFormView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MVCTest3\ExtraFormView.Designer.cs">
+      <DependentUpon>ExtraFormView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MVCTest3\IController.cs" />
+    <Compile Include="MVCTest3\IModel.cs" />
+    <Compile Include="MVCTest3\IProject.cs" />
+    <Compile Include="MVCTest3\Model.cs" />
+    <Compile Include="MVCTest3\MVCTest3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MVCTest3\MVCTest3.Designer.cs">
+      <DependentUpon>MVCTest3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MVCTest3\Project.cs" />
+    <Compile Include="MVCTest\ITradeController.cs" />
+    <Compile Include="MVCTest\ITradeModel.cs" />
+    <Compile Include="MVCTest\MVCTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MVCTest\MVCTestForm.Designer.cs">
+      <DependentUpon>MVCTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MVCTest\TradeControllerA.cs" />
+    <Compile Include="MVCTest\TradeModelA.cs" />
+    <Compile Include="MVCTest\TradeObject.cs" />
+    <Compile Include="Program.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Thread1\ThreadView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thread1\ThreadView.Designer.cs">
+      <DependentUpon>ThreadView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thread1\WordsDA.cs" />
+    <Compile Include="Thread1\WordsObject.cs" />
+    <EmbeddedResource Include="DragDropFile.resx">
+      <DependentUpon>DragDropFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MVCPrac\GenericView.resx">
+      <DependentUpon>GenericView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MVCPrac\MVC01.resx">
+      <DependentUpon>MVC01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MVCTest2\ExtraForm.resx">
+      <DependentUpon>ExtraForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MVCTest3\ExtraFormView.resx">
+      <DependentUpon>ExtraFormView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MVCTest3\MVCTest3.resx">
+      <DependentUpon>MVCTest3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MVCTest\MVCTestForm.resx">
+      <DependentUpon>MVCTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Thread1\ThreadView.resx">
+      <DependentUpon>ThreadView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
